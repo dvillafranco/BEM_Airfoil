@@ -1,0 +1,55 @@
+ "/project/aeracous/sgrace/BEM/2d/geom"
+ F         T     T    F         F         F
+ 0.0       0.00     0.1       20.0
+10.0       800 
+ 1         1         0.0
+ 0
+ "1example"
+ F
+
+
+THIS FILE IS USED AFTER a BEM.1***.in file is run.
+It starts from the steady lift solution and proceeds
+on with the unsteady lift calculation.
+
+
+INPUT FIELDS:
+============
+Geompath  (not that necessary because data will come 
+		from steady run case)
+DoField, DoVort, Fixed_Wake, Steady, WriteDatFile 
+	(will always have Steady set to False)
+	(Do Vort set to true as above requires that 
+		the input file Vort.1***.in exists)
+	(Other variables are the same as in BEM.1***.in)
+Mach,      dn,    delta,     AOA	
+	(Really only running for Mach number of 0.0)
+	(Other variables are the same!)
+Tf,        Nt
+	(Tf and Nt are set by the specs of the problem you
+		are simulating. See below for more details) 
+TEcond,    BCmode,   BCfreq
+	(We have found that the trailing edge condition 1
+		as implemented in the code gives the best
+		unsteady results -- this is different than
+		the steady case where condition 0 is used
+	For the BCmode options see BEM.1example.in. For
+		a passing vortex use BCmode 1 plus DoVort = T)
+Npieces
+	(This doesn't matter in the BEM.2***.in file, information
+		is read in from the BEM.1***.in run)
+Case name of output from steady run
+	(If BEM.1example.in was run first then the name here 
+		is   1example )
+?????
+
+
+****************
+
+NOTES on TF and NT:
+For an unsteady passing vortex run, dt = TF/NT.  Tf should be 
+about 2 times the distance of the vortex's initial x location
+from the center of the airfoil.  This ensures that the vortex will
+travel approximately the same distance downstream so its path is
+compatible on both sides of the midchord. This is necessary for
+the transform to be calculated correctly. 

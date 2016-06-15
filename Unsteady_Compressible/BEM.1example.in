@@ -1,0 +1,96 @@
+ "/projectnb/bem/DORIEN/GEOM/"
+ F         F    F    F         F    F        
+ 0.0       0.00     0.1       0.0
+5000.0     50 
+ 1         1         0.0
+ 1
+ 'NACA 2412' 200 cosine 
+   -0.5  0    1 1
+
+
+
+INPUT FIELDS:
+============
+Geompath:  name of directory where data file would be stored
+		(if not using NACA airfoil)
+DoField, DoVort, Fixed_Wake, Steady, WriteDatFile
+Mach,      dn,    delta,     AOA
+Tf,        Nt
+TEcond,    BCmode,   BCfreq
+Npieces
+AFtype     Nx        spacing
+trans(2)   scales(2)
+
+
+NOTES: 
+-- DoField computes far field as well as near field
+-- DoVort allows for imposed upstream vortex filament
+-- Fixed_Wake allows for free wake calculation
+-- Steady allows from unsteady calculation
+-- WriteDatFile , was really used when debugging -- adds a lot
+	of output files.
+
+-- Mach number -- only valid to use with 0 at this point
+ 
+--- dn is important for compressible flow calculations. This
+two-dimensional version does not have compressibility added to it.A
+
+--- delta is the regularization parameter for the free wake evolution
+
+-- Tf is the length of the wake and Nt is the number of chunks in 
+the wake (i.e. number of time steps).  For steady runs, make the
+length of the wake very long and  use a moderate number of chunks.
+This pushes the starting vortex very far away.  You can look at
+the lift data to make sure that it has been run for enough time
+steps so that the lift levels off.
+
+--Nt is calculated  directly from Tf and dt. Dt is known based on
+the Nyquist criterion. If you want to resolve frequencies up
+to F, then dt = 1/2f, and Nt = Tf/dt.
+
+-- TEcond allows for different method of imposin the Kutta Condition.
+	For steady flow use 1
+
+-- BC mode  allows for Sears input, Theodorsen input, etc.  
+	    case (1) ! Steady freestream in \hat i direction
+               BC(j,:) = -n1
+            case (2) ! Sinusoidal vertical (\hat j) gust travelling in \hat i
+               BC(j,:) = -n2 * cos(BCfreq*(Time - xc))
+            case (3) ! Sinusoidal vertical (\hat j) gust travelling in \hat i
+               BC(j,:) = -n2 * sin(BCfreq*(Time - xc))
+            case (4) ! Sinusoidal pitch oscillation about x1=0
+               BC(j,:) = -n2 * cos(BCfreq*Time) * xc
+            case (5) ! Sinusoidal pitch oscillation about x1=0
+               BC(j,:) = -n2 * sin(BCfreq*Time) * xc
+            case (6) ! Sinusoidal heave
+               BC(j,:) = -n2 * cos(BCfreq*Time)
+            case (7) ! Sinusoidal heave
+               BC(j,:) = -n2 * sin(BCfreq*Time)
+            case (8) ! Bose calc, th=0.4=alf/(f h), alf axis=1, alf leads h pi/2
+               BC(j,:) = -n2 * (                                    &
+                  0.4_dp*BCfreq**2*(xc-1.0_dp) * cos(BCfreq*Time) - &
+                  0.6_dp*BCfreq                * sin(BCfreq*Time) )
+            case default
+
+
+
+-- BC freq - if BC mode used, must input nondimensional frequency 
+	as well (nondim by ????)
+
+-- Npieces -- 1 for single element wing. >1 if have slats/flaps
+
+-- Aftype:  Can simply specify  "NACA 0001"   or can give it a 
+	file name with the data.  
+
+-- Nx : Number of panels on the airfoil (top and bottom together)
+
+-- spacing : linear, mixed, cosine.   Use when using NACA airfoils.
+	when supplying your own data, the spacing in the data
+	file is used. 
+
+--  Trans:  if you want to move the airfoil in translation , enter how 
+	many units  (or just put 0 0 ).
+ 
+-- Scales:  ifyou want to scale the airfoil in the streamwise and other
+	direction put in values not equal to 1 here. 
+

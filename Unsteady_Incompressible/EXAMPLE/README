@@ -1,0 +1,13 @@
+
+The Example in this directory:
+
+Running the code as described in DOC/run.the.program with these 
+input files (*.mstream is not used), generates the *.bin files
+in this directory.
+
+These files can be read into Matlab as is using the BEM2d_readbin.m
+program.  Also described in DOC/run.the.program
+
+The geometry is a joukowski airfoil at an AOA and a simulation of a vortex
+passing the airfoil was completed. The steady state condition was
+obtained first followed by the response to the passing vortex.  
