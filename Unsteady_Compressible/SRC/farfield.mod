@@ -1,6 +1,6 @@
 V27 0x4 farfield
 12 Farfield.f90 S582 0
-06/09/2016  12:25:27
+06/20/2016  14:23:02
 use greens_mod private
 use bem2d_typ private
 enduse
