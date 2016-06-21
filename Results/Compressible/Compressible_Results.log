@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  20 JUN 2016 16:49
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  21 JUN 2016 10:14
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -224,13 +224,20 @@ Package pdftex.def Info: BEM_Possio_Compare.pdf used on input line 28.
  [1
 
 {/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./BEM_P
-ossio_Compare.pdf>] [2]
+ossio_Compare.pdf>]
+<MachSweep_Compare.pdf, id=29, 548.50362pt x 436.4542pt>
+File: MachSweep_Compare.pdf Graphic file (type pdf)
+
+<use MachSweep_Compare.pdf>
+Package pdftex.def Info: MachSweep_Compare.pdf used on input line 38.
+(pdftex.def)             Requested size: 289.07349pt x 216.81468pt.
+ [2 <./MachSweep_Compare.pdf>]
 (./Compressible_Results.aux) ) 
 Here is how much of TeX's memory you used:
- 2025 strings out of 493089
- 29607 string characters out of 6134842
+ 2031 strings out of 493089
+ 29749 string characters out of 6134842
  95913 words of memory out of 5000000
- 5510 multiletter control sequences out of 15000+600000
+ 5514 multiletter control sequences out of 15000+600000
  3948 words of font info for 15 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  37i,5n,32p,665b,227s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -244,10 +251,10 @@ msfonts/cm/cmr10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/ams
 fonts/cm/cmr7.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfon
 ts/cm/cmsy10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfont
 s/cm/cmsy7.pfb>
-Output written on Compressible_Results.pdf (2 pages, 111448 bytes).
+Output written on Compressible_Results.pdf (2 pages, 137680 bytes).
 PDF statistics:
- 61 PDF objects out of 1000 (max. 8388607)
- 43 compressed objects within 1 object stream
+ 75 PDF objects out of 1000 (max. 8388607)
+ 53 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 6 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 11 words of extra memory for PDF output out of 10000 (max. 10000000)
 
