@@ -30,11 +30,18 @@ where $D(\tau) = (\tau/c)_{1\%} + (\tau/c)_{10\%}$ is based on the thickness to 
 \noindent When defining the geometry for the BEM code, one can either select the airfoil to be discretized using a linear or a cosine spacing. It was interest to see what effect a different discretization would have on the results of the transform. Shown in the figure below is the lift spectrum results for a NACA 0012 airfoil discretized using a cosine spacing. The previous results shown in figure 1 was discretized using the linear spacing approach. 
 
 \begin{figure}[h]
-\includegraphics[width = 4in, height = 3.2in]{BEM_Cosine_0012}
+\includegraphics[width = 3.5in, height = 2.8in]{BEM_Cosine_0012}
 \centering
 \caption{Lift Spectrum for NACA 0012 - cosine spacing}
 \end{figure}
 
+As was done with the flat plate, the BEM results were now compared to other simulations with appropriate normalizations being done. In this case, the curve marked 'Analytical BVI' refers to the corrected BVI lift response for thickness as described above. 
+
+\begin{figure}[h]
+\includegraphics[width = 3.8 in, height = 3  in]{BEM_total_compare}
+\centering
+\caption{Lift Spectrum compared to other simulations}
+\end{figure}
 
 \end{document}
 

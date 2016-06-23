@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  18 JUN 2016 20:45
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  23 JUN 2016 15:56
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -226,27 +226,38 @@ Package pdftex.def Info: SearsVsBEM.pdf used on input line 22.
  [1
 
 {/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./Lift_
-Curve.pdf> <./SearsVsBEM.pdf>] (./BEM_Results.aux) ) 
+Curve.pdf> <./SearsVsBEM.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 29--31
+
+ []
+
+<fp_total_compare.pdf, id=41, 566.20732pt x 423.92297pt>
+File: fp_total_compare.pdf Graphic file (type pdf)
+
+<use fp_total_compare.pdf>
+Package pdftex.def Info: fp_total_compare.pdf used on input line 36.
+(pdftex.def)             Requested size: 289.08157pt x 216.8059pt.
+ [2 <./fp_total_compare.pdf>] (./BEM_Results.aux) ) 
 Here is how much of TeX's memory you used:
- 2009 strings out of 493089
- 29177 string characters out of 6134842
- 93519 words of memory out of 5000000
- 5496 multiletter control sequences out of 15000+600000
+ 2015 strings out of 493089
+ 29313 string characters out of 6134842
+ 94519 words of memory out of 5000000
+ 5500 multiletter control sequences out of 15000+600000
  3948 words of font info for 15 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 37i,5n,32p,346b,227s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/local/texlive/2015/te
-xmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2015/tex
-mf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2015/texm
-f-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2015/texmf
--dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2015/texmf-d
-ist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2015/texmf-dis
-t/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2015/texmf-dist
-/fonts/type1/public/amsfonts/cm/cmsy7.pfb>
-Output written on BEM_Results.pdf (1 page, 126229 bytes).
+ 37i,5n,32p,666b,227s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/local/texlive/2015/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2015/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2015/texmf
+-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2015/texmf-
+dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2015/texmf-di
+st/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2015/texmf-dist
+/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2015/texmf-dist/
+fonts/type1/public/amsfonts/cm/cmsy7.pfb>
+Output written on BEM_Results.pdf (2 pages, 149149 bytes).
 PDF statistics:
- 64 PDF objects out of 1000 (max. 8388607)
- 45 compressed objects within 1 object stream
+ 81 PDF objects out of 1000 (max. 8388607)
+ 57 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 11 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 16 words of extra memory for PDF output out of 10000 (max. 10000000)
 
