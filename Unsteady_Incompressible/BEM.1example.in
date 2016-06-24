@@ -1,11 +1,11 @@
  "/projectnb/bem/DORIEN/GEOM/"
  F         F        F       F       F   F  
- 0.0       0.00     0.1     20.0
+ 0.0       0.00     0.1     0
 4000     500 
  1         1         0.0
  1
- 'NACA 1412' 200 linear 
-   -0.5  0    1   1
+ 'NACA 2106' 200 linear 
+   0  0    2   1
 
 
 
