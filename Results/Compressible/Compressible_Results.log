@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  21 JUN 2016 11:46
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  24 JUN 2016 15:30
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -231,30 +231,48 @@ File: MachSweep_Compare.pdf Graphic file (type pdf)
 <use MachSweep_Compare.pdf>
 Package pdftex.def Info: MachSweep_Compare.pdf used on input line 38.
 (pdftex.def)             Requested size: 289.07349pt x 216.81468pt.
- [2 <./MachSweep_Compare.pdf>]
-(./Compressible_Results.aux) ) 
+ <NACA0001_m02.pdf, id=30, 570.6929pt x 433.7015pt>
+File: NACA0001_m02.pdf Graphic file (type pdf)
+
+<use NACA0001_m02.pdf>
+Package pdftex.def Info: NACA0001_m02.pdf used on input line 46.
+(pdftex.def)             Requested size: 289.08151pt x 216.81052pt.
+ [2 <./MachSweep_Compare.pdf> <./NACA0001_m02.pdf>]
+<NACA0001_m04.pdf, id=60, 548.21469pt x 451.40976pt>
+File: NACA0001_m04.pdf Graphic file (type pdf)
+ <use NACA0001_m04.pdf>
+Package pdftex.def Info: NACA0001_m04.pdf used on input line 54.
+(pdftex.def)             Requested size: 289.08852pt x 216.80508pt.
+
+<NACA0001_m06.pdf, id=61, 533.11047pt x 418.14868pt>
+File: NACA0001_m06.pdf Graphic file (type pdf)
+ <use NACA0001_m06.pdf>
+Package pdftex.def Info: NACA0001_m06.pdf used on input line 60.
+(pdftex.def)             Requested size: 289.08742pt x 216.81328pt.
+
+[3 <./NACA0001_m04.pdf> <./NACA0001_m06.pdf>] (./Compressible_Results.aux) ) 
 Here is how much of TeX's memory you used:
- 2031 strings out of 493089
- 29749 string characters out of 6134842
+ 2049 strings out of 493089
+ 30085 string characters out of 6134842
  95913 words of memory out of 5000000
- 5514 multiletter control sequences out of 15000+600000
+ 5526 multiletter control sequences out of 15000+600000
  3948 words of font info for 15 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  37i,5n,32p,665b,227s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/local/texlive/2015/texmf-dist/fonts/type1/p
-ublic/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/pu
-blic/amsfonts/cm/cmex10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/pub
-lic/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/publ
-ic/amsfonts/cm/cmmi5.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public
-/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/a
-msfonts/cm/cmr10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/ams
-fonts/cm/cmr7.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfon
-ts/cm/cmsy10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfont
-s/cm/cmsy7.pfb>
-Output written on Compressible_Results.pdf (2 pages, 137680 bytes).
+</u
+sr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
+r/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr
+/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/
+local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/lo
+cal/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/loca
+l/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/
+texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/tex
+live/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texl
+ive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb>
+Output written on Compressible_Results.pdf (3 pages, 196016 bytes).
 PDF statistics:
- 75 PDF objects out of 1000 (max. 8388607)
- 53 compressed objects within 1 object stream
+ 120 PDF objects out of 1000 (max. 8388607)
+ 85 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 11 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 26 words of extra memory for PDF output out of 10000 (max. 10000000)
 
