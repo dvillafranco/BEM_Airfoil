@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  24 JUN 2016 13:52
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  28 JUN 2016 11:37
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -223,28 +223,33 @@ e
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 13.
+(Font)              <7> on input line 14.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 13.
+(Font)              <5> on input line 14.
 
-Underfull \hbox (badness 10000) in paragraph at lines 12--14
+Underfull \hbox (badness 10000) in paragraph at lines 12--15
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 12--15
 
  []
 
 <Camber_Compare.pdf, id=1, 566.80692pt x 438.83908pt>
 File: Camber_Compare.pdf Graphic file (type pdf)
  <use Camber_Compare.pdf>
-Package pdftex.def Info: Camber_Compare.pdf used on input line 16.
+Package pdftex.def Info: Camber_Compare.pdf used on input line 17.
 (pdftex.def)             Requested size: 289.08499pt x 216.8142pt.
 
 <Martinez_Camber.pdf, id=2, 739.84995pt x 462.41223pt>
 File: Martinez_Camber.pdf Graphic file (type pdf)
 
 <use Martinez_Camber.pdf>
-Package pdftex.def Info: Martinez_Camber.pdf used on input line 22.
+Package pdftex.def Info: Martinez_Camber.pdf used on input line 23.
 (pdftex.def)             Requested size: 289.0709pt x 180.67166pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 27--28
+Underfull \hbox (badness 10000) in paragraph at lines 28--29
 
  []
 
@@ -252,52 +257,52 @@ Underfull \hbox (badness 10000) in paragraph at lines 27--28
 
 {/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./Cambe
 r_Compare.pdf> <./Martinez_Camber.pdf, page is rotated 90 degrees>]
-Underfull \hbox (badness 10000) in paragraph at lines 34--35
+Underfull \hbox (badness 10000) in paragraph at lines 35--36
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 34--35
+Underfull \hbox (badness 10000) in paragraph at lines 35--36
 
  []
 
 <NACA1101.pdf, id=35, 571.83069pt x 427.4633pt>
 File: NACA1101.pdf Graphic file (type pdf)
  <use NACA1101.pdf>
-Package pdftex.def Info: NACA1101.pdf used on input line 40.
+Package pdftex.def Info: NACA1101.pdf used on input line 41.
 (pdftex.def)             Requested size: 252.94127pt x 180.6748pt.
 
-Overfull \hbox (18.06377pt too wide) in paragraph at lines 40--41
+Overfull \hbox (18.06377pt too wide) in paragraph at lines 41--42
  [][] 
  []
 
 <NACA2101.pdf, id=36, 557.36533pt x 428.27956pt>
 File: NACA2101.pdf Graphic file (type pdf)
  <use NACA2101.pdf>
-Package pdftex.def Info: NACA2101.pdf used on input line 45.
+Package pdftex.def Info: NACA2101.pdf used on input line 46.
 (pdftex.def)             Requested size: 245.71776pt x 180.68pt.
 
-Overfull \hbox (10.84026pt too wide) in paragraph at lines 45--46
+Overfull \hbox (10.84026pt too wide) in paragraph at lines 46--47
  [][] 
  []
 
 <NACA2401.pdf, id=37, 544.60005pt x 420.66501pt>
 File: NACA2401.pdf Graphic file (type pdf)
  <use NACA2401.pdf>
-Package pdftex.def Info: NACA2401.pdf used on input line 56.
+Package pdftex.def Info: NACA2401.pdf used on input line 57.
 (pdftex.def)             Requested size: 252.94556pt x 180.67702pt.
 
-Overfull \hbox (18.06805pt too wide) in paragraph at lines 56--57
+Overfull \hbox (18.06805pt too wide) in paragraph at lines 57--58
  [][] 
  []
 
 <NACA1103.pdf, id=38, 561.65393pt x 425.79817pt>
 File: NACA1103.pdf Graphic file (type pdf)
  <use NACA1103.pdf>
-Package pdftex.def Info: NACA1103.pdf used on input line 61.
+Package pdftex.def Info: NACA1103.pdf used on input line 62.
 (pdftex.def)             Requested size: 245.71442pt x 180.6727pt.
 
-Overfull \hbox (10.83691pt too wide) in paragraph at lines 61--62
+Overfull \hbox (10.83691pt too wide) in paragraph at lines 62--63
  [][] 
  []
 
@@ -305,56 +310,132 @@ Overfull \hbox (10.83691pt too wide) in paragraph at lines 61--62
 <NACA2103.pdf, id=94, 563.87488pt x 434.40614pt>
 File: NACA2103.pdf Graphic file (type pdf)
  <use NACA2103.pdf>
-Package pdftex.def Info: NACA2103.pdf used on input line 72.
+Package pdftex.def Info: NACA2103.pdf used on input line 73.
 (pdftex.def)             Requested size: 252.94977pt x 180.67952pt.
 
-Overfull \hbox (18.07227pt too wide) in paragraph at lines 72--73
+Overfull \hbox (18.07227pt too wide) in paragraph at lines 73--74
  [][] 
  []
 
 <NACA2403.pdf, id=95, 538.98312pt x 413.39906pt>
 File: NACA2403.pdf Graphic file (type pdf)
  <use NACA2403.pdf>
-Package pdftex.def Info: NACA2403.pdf used on input line 77.
+Package pdftex.def Info: NACA2403.pdf used on input line 78.
 (pdftex.def)             Requested size: 231.26477pt x 180.67241pt.
 
 <NACA1106.pdf, id=96, 549.36345pt x 411.54283pt>
 File: NACA1106.pdf Graphic file (type pdf)
  <use NACA1106.pdf>
-Package pdftex.def Info: NACA1106.pdf used on input line 86.
+Package pdftex.def Info: NACA1106.pdf used on input line 87.
 (pdftex.def)             Requested size: 252.94496pt x 180.6775pt.
 
-Overfull \hbox (18.06746pt too wide) in paragraph at lines 86--87
+Overfull \hbox (18.06746pt too wide) in paragraph at lines 87--88
  [][] 
  []
 
 <NACA2106.pdf, id=97, 553.5011pt x 442.12347pt>
 File: NACA2106.pdf Graphic file (type pdf)
  <use NACA2106.pdf>
-Package pdftex.def Info: NACA2106.pdf used on input line 91.
+Package pdftex.def Info: NACA2106.pdf used on input line 92.
 (pdftex.def)             Requested size: 245.72023pt x 187.90335pt.
 
-Overfull \hbox (10.84273pt too wide) in paragraph at lines 91--92
+Overfull \hbox (10.84273pt too wide) in paragraph at lines 92--93
  [][] 
  []
 
 [3 <./NACA2103.pdf> <./NACA2403.pdf> <./NACA1106.pdf> <./NACA2106.pdf>]
-(./Camber_Results.aux) ) 
+Underfull \hbox (badness 10000) in paragraph at lines 98--99
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 98--99
+
+ []
+
+<NACA1101_pressure_k5mag.pdf, id=154, 549.22346pt x 407.08357pt>
+File: NACA1101_pressure_k5mag.pdf Graphic file (type pdf)
+
+<use NACA1101_pressure_k5mag.pdf>
+Package pdftex.def Info: NACA1101_pressure_k5mag.pdf used on input line 104.
+(pdftex.def)             Requested size: 140.92589pt x 104.06892pt.
+
+<NACA1101_pressure_k5imag.pdf, id=155, 553.81618pt x 414.15326pt>
+File: NACA1101_pressure_k5imag.pdf Graphic file (type pdf)
+
+<use NACA1101_pressure_k5imag.pdf>
+Package pdftex.def Info: NACA1101_pressure_k5imag.pdf used on input line 109.
+(pdftex.def)             Requested size: 140.92126pt x 104.0689pt.
+
+<NACA1101_pressure_k5real.pdf, id=156, 553.36761pt x 414.1861pt>
+File: NACA1101_pressure_k5real.pdf Graphic file (type pdf)
+
+<use NACA1101_pressure_k5real.pdf>
+Package pdftex.def Info: NACA1101_pressure_k5real.pdf used on input line 114.
+(pdftex.def)             Requested size: 155.01787pt x 104.07082pt.
+
+<NACA1101_pressure_k10mag.pdf, id=157, 547.65456pt x 414.58649pt>
+File: NACA1101_pressure_k10mag.pdf Graphic file (type pdf)
+
+<use NACA1101_pressure_k10mag.pdf>
+Package pdftex.def Info: NACA1101_pressure_k10mag.pdf used on input line 124.
+(pdftex.def)             Requested size: 140.92442pt x 104.0702pt.
+
+<NACA1101_pressure_k10imag.pdf, id=158, 519.53117pt x 408.47516pt>
+File: NACA1101_pressure_k10imag.pdf Graphic file (type pdf)
+
+<use NACA1101_pressure_k10imag.pdf>
+Package pdftex.def Info: NACA1101_pressure_k10imag.pdf used on input line 129.
+(pdftex.def)             Requested size: 140.92532pt x 104.0694pt.
+
+<NACA1101_pressure_k10real.pdf, id=159, 540.87158pt x 417.33688pt>
+File: NACA1101_pressure_k10real.pdf Graphic file (type pdf)
+
+<use NACA1101_pressure_k10real.pdf>
+Package pdftex.def Info: NACA1101_pressure_k10real.pdf used on input line 134.
+(pdftex.def)             Requested size: 155.01656pt x 104.07286pt.
+
+<NACA1101_pressure_k15mag.pdf, id=160, 549.03091pt x 419.17703pt>
+File: NACA1101_pressure_k15mag.pdf Graphic file (type pdf)
+
+<use NACA1101_pressure_k15mag.pdf>
+Package pdftex.def Info: NACA1101_pressure_k15mag.pdf used on input line 144.
+(pdftex.def)             Requested size: 140.92674pt x 104.07123pt.
+
+<NACA1101_pressure_k15imag.pdf, id=161, 509.0044pt x 415.11375pt>
+File: NACA1101_pressure_k15imag.pdf Graphic file (type pdf)
+
+<use NACA1101_pressure_k15imag.pdf>
+Package pdftex.def Info: NACA1101_pressure_k15imag.pdf used on input line 149.
+(pdftex.def)             Requested size: 140.92807pt x 104.06955pt.
+
+<NACA1101_pressure_k15real.pdf, id=162, 536.29846pt x 417.06334pt>
+File: NACA1101_pressure_k15real.pdf Graphic file (type pdf)
+
+<use NACA1101_pressure_k15real.pdf>
+Package pdftex.def Info: NACA1101_pressure_k15real.pdf used on input line 154.
+(pdftex.def)             Requested size: 155.0152pt x 104.0683pt.
+ [4 <./NACA1101_pressure_k5mag.pdf> <./NACA1101_pressure_k5imag.pdf> <./NACA110
+1_pressure_k5real.pdf> <./NACA1101_pressure_k10mag.pdf> <./NACA1101_pressure_k1
+0imag.pdf> <./NACA1101_pressure_k10real.pdf> <./NACA1101_pressure_k15mag.pdf> <
+./NACA1101_pressure_k15imag.pdf> <./NACA1101_pressure_k15real.pdf>] (./Camber_R
+esults.aux) ) 
 Here is how much of TeX's memory you used:
- 3142 strings out of 493089
- 49599 string characters out of 6134842
- 114893 words of memory out of 5000000
- 6605 multiletter control sequences out of 15000+600000
- 3948 words of font info for 15 fonts, out of 8000000 for 9000
+ 3204 strings out of 493089
+ 51411 string characters out of 6134842
+ 115893 words of memory out of 5000000
+ 6648 multiletter control sequences out of 15000+600000
+ 4247 words of font info for 16 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 38i,7n,38p,453b,337s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/local/texlive/2015/texmf-dist/fonts/type1/public/
-amsfonts/cm/cmbx10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/a
-msfonts/cm/cmr10.pfb>
-Output written on Camber_Results.pdf (3 pages, 469215 bytes).
+ 38i,7n,38p,453b,447s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm
+/cmbx10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/
+cmr10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cm
+r9.pfb>
+Output written on Camber_Results.pdf (4 pages, 764589 bytes).
 PDF statistics:
- 162 PDF objects out of 1000 (max. 8388607)
- 113 compressed objects within 2 object streams
+ 296 PDF objects out of 1000 (max. 8388607)
+ 208 compressed objects within 3 object streams
  0 named destinations out of 1000 (max. 500000)
- 51 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 96 words of extra memory for PDF output out of 10000 (max. 10000000)
 

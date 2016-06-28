@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  23 JUN 2016 16:04
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  28 JUN 2016 11:25
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -91,21 +91,43 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \@float@everytoks=\toks17
 \@floatcapt=\box27
 )
+(/usr/local/texlive/2015/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2013/05/02 v3.3-89 Customizing captions (AR)
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2013/05/02 v1.6-88 caption3 kernel (AR)
+Package caption3 Info: TeX engine: e-TeX on input line 57.
+\captionmargin=\dimen113
+\captionmargin@=\dimen114
+\captionwidth=\dimen115
+\caption@tempdima=\dimen116
+\caption@indent=\dimen117
+\caption@parindent=\dimen118
+\caption@hangindent=\dimen119
+)
+\c@ContinuedFloat=\count92
+Package caption Info: float package is loaded.
+)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/caption/subcaption.sty
+Package: subcaption 2013/02/03 v1.1-62 Sub-captions (AR)
+\c@subfigure=\count93
+\c@subtable=\count94
+)
 (./BEM_Thickness.aux)
 \openout1 = `BEM_Thickness.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 7.
-LaTeX Font Info:    ... okay on input line 7.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 7.
-LaTeX Font Info:    ... okay on input line 7.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 7.
-LaTeX Font Info:    ... okay on input line 7.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 7.
-LaTeX Font Info:    ... okay on input line 7.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 7.
-LaTeX Font Info:    ... okay on input line 7.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 7.
-LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -143,16 +165,16 @@ LaTeX Font Info:    ... okay on input line 7.
 
 (/usr/local/texlive/2015/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count92
-\scratchdimen=\dimen113
+\scratchcounter=\count95
+\scratchdimen=\dimen120
 \scratchbox=\box28
-\nofMPsegments=\count93
-\nofMParguments=\count94
+\nofMPsegments=\count96
+\nofMParguments=\count97
 \everyMPshowfont=\toks18
-\MPscratchCnt=\count95
-\MPscratchDim=\dimen114
-\MPnumerator=\count96
-\makeMPintoPDFobject=\count97
+\MPscratchCnt=\count98
+\MPscratchDim=\dimen121
+\MPnumerator=\count99
+\makeMPintoPDFobject=\count100
 \everyMPtoPDFconversion=\toks19
 ) (/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
 Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
@@ -198,19 +220,26 @@ G,.JBIG2,.JB2,.eps]
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: End \AtBeginDocument code.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 10.
+(Font)              <7> on input line 13.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 10.
+(Font)              <5> on input line 13.
 
-Underfull \hbox (badness 10000) in paragraph at lines 9--11
+Underfull \hbox (badness 10000) in paragraph at lines 11--14
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 11--14
 
  []
 
 <BEM_Compare.pdf, id=1, 551.95633pt x 448.45352pt>
 File: BEM_Compare.pdf Graphic file (type pdf)
  <use BEM_Compare.pdf>
-Package pdftex.def Info: BEM_Compare.pdf used on input line 23.
+Package pdftex.def Info: BEM_Compare.pdf used on input line 26.
 (pdftex.def)             Requested size: 289.08237pt x 216.8154pt.
 
 [1
@@ -220,37 +249,114 @@ ompare.pdf>] <BEM_Cosine_0012.pdf, id=28, 565.3014pt x 433.7015pt>
 File: BEM_Cosine_0012.pdf Graphic file (type pdf)
 
 <use BEM_Cosine_0012.pdf>
-Package pdftex.def Info: BEM_Cosine_0012.pdf used on input line 33.
+Package pdftex.def Info: BEM_Cosine_0012.pdf used on input line 36.
 (pdftex.def)             Requested size: 252.94278pt x 202.35736pt.
 
 <BEM_total_compare.pdf, id=29, 558.40681pt x 420.75244pt>
 File: BEM_total_compare.pdf Graphic file (type pdf)
 
 <use BEM_total_compare.pdf>
-Package pdftex.def Info: BEM_total_compare.pdf used on input line 41.
+Package pdftex.def Info: BEM_total_compare.pdf used on input line 44.
 (pdftex.def)             Requested size: 274.63568pt x 216.80869pt.
- [2 <./BEM_Cosine_0012.pdf> <./BEM_total_compare.pdf>] (./BEM_Thickness.aux) ) 
+ [2 <./BEM_Cosine_0012.pdf> <./BEM_total_compare.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 50--52
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 50--52
+
+ []
+
+<NACA0003_pressure_k5mag.pdf, id=59, 545.86473pt x 410.5188pt>
+File: NACA0003_pressure_k5mag.pdf Graphic file (type pdf)
+
+<use NACA0003_pressure_k5mag.pdf>
+Package pdftex.def Info: NACA0003_pressure_k5mag.pdf used on input line 57.
+(pdftex.def)             Requested size: 140.92197pt x 104.07016pt.
+
+<NACA0003_pressure_k5imag.pdf, id=60, 550.71132pt x 414.82278pt>
+File: NACA0003_pressure_k5imag.pdf Graphic file (type pdf)
+
+<use NACA0003_pressure_k5imag.pdf>
+Package pdftex.def Info: NACA0003_pressure_k5imag.pdf used on input line 62.
+(pdftex.def)             Requested size: 140.9295pt x 104.06622pt.
+
+<NACA0003_pressure_k5real.pdf, id=61, 555.42877pt x 408.31326pt>
+File: NACA0003_pressure_k5real.pdf Graphic file (type pdf)
+
+<use NACA0003_pressure_k5real.pdf>
+Package pdftex.def Info: NACA0003_pressure_k5real.pdf used on input line 67.
+(pdftex.def)             Requested size: 155.01895pt x 104.07176pt.
+
+<NACA0003_pressure_k10mag.pdf, id=62, 548.35915pt x 409.43353pt>
+File: NACA0003_pressure_k10mag.pdf Graphic file (type pdf)
+
+<use NACA0003_pressure_k10mag.pdf>
+Package pdftex.def Info: NACA0003_pressure_k10mag.pdf used on input line 77.
+(pdftex.def)             Requested size: 140.93002pt x 104.06993pt.
+
+<NACA0003_pressure_k10imag.pdf, id=63, 530.16747pt x 414.02641pt>
+File: NACA0003_pressure_k10imag.pdf Graphic file (type pdf)
+
+<use NACA0003_pressure_k10imag.pdf>
+Package pdftex.def Info: NACA0003_pressure_k10imag.pdf used on input line 82.
+(pdftex.def)             Requested size: 140.93054pt x 104.0686pt.
+
+<NACA0003_pressure_k10real.pdf, id=64, 545.86473pt x 411.03523pt>
+File: NACA0003_pressure_k10real.pdf Graphic file (type pdf)
+
+<use NACA0003_pressure_k10real.pdf>
+Package pdftex.def Info: NACA0003_pressure_k10real.pdf used on input line 87.
+(pdftex.def)             Requested size: 155.015pt x 104.06937pt.
+
+<NACA0003_pressure_k15mag.pdf, id=65, 549.59105pt x 420.53593pt>
+File: NACA0003_pressure_k15mag.pdf Graphic file (type pdf)
+
+<use NACA0003_pressure_k15mag.pdf>
+Package pdftex.def Info: NACA0003_pressure_k15mag.pdf used on input line 97.
+(pdftex.def)             Requested size: 140.92796pt x 104.06851pt.
+
+<NACA0003_pressure_k15_imag.pdf, id=66, 544.21715pt x 407.77061pt>
+File: NACA0003_pressure_k15_imag.pdf Graphic file (type pdf)
+
+<use NACA0003_pressure_k15_imag.pdf>
+Package pdftex.def Info: NACA0003_pressure_k15_imag.pdf used on input line 102.
+
+(pdftex.def)             Requested size: 140.92844pt x 104.07034pt.
+
+<NACA0003_pressure_k15real.pdf, id=67, 529.53069pt x 419.84877pt>
+File: NACA0003_pressure_k15real.pdf Graphic file (type pdf)
+
+<use NACA0003_pressure_k15real.pdf>
+Package pdftex.def Info: NACA0003_pressure_k15real.pdf used on input line 107.
+(pdftex.def)             Requested size: 155.02243pt x 104.07144pt.
+ [3 <./NACA0003_pressure_k5mag.pdf> <./NACA0003_pressure_k5imag.pdf> <./NACA000
+3_pressure_k5real.pdf> <./NACA0003_pressure_k10mag.pdf> <./NACA0003_pressure_k1
+0imag.pdf> <./NACA0003_pressure_k10real.pdf> <./NACA0003_pressure_k15mag.pdf> <
+./NACA0003_pressure_k15_imag.pdf> <./NACA0003_pressure_k15real.pdf>] (./BEM_Thi
+ckness.aux) ) 
 Here is how much of TeX's memory you used:
- 2015 strings out of 493089
- 29373 string characters out of 6134842
- 94519 words of memory out of 5000000
- 5500 multiletter control sequences out of 15000+600000
- 3948 words of font info for 15 fonts, out of 8000000 for 9000
+ 3162 strings out of 493089
+ 50828 string characters out of 6134842
+ 116893 words of memory out of 5000000
+ 6620 multiletter control sequences out of 15000+600000
+ 4247 words of font info for 16 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 37i,5n,32p,543b,227s stack positions out of 5000i,500n,10000p,200000b,80000s
-<
-/usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></
-usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></u
-sr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></us
-r/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/
-local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/lo
-cal/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local
-/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/
-texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb>
-Output written on BEM_Thickness.pdf (2 pages, 316213 bytes).
+ 38i,7n,38p,543b,447s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm
+/cmbx10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/
+cmex10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/c
+mmi10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cm
+mi7.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr1
+0.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.p
+fb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb>
+</usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><
+/usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb>
+Output written on BEM_Thickness.pdf (3 pages, 594813 bytes).
 PDF statistics:
- 85 PDF objects out of 1000 (max. 8388607)
- 60 compressed objects within 1 object stream
+ 219 PDF objects out of 1000 (max. 8388607)
+ 155 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
- 16 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 61 words of extra memory for PDF output out of 10000 (max. 10000000)
 

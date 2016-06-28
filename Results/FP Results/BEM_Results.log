@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  23 JUN 2016 15:56
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  28 JUN 2016 11:11
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -91,21 +91,43 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \@float@everytoks=\toks17
 \@floatcapt=\box27
 )
+(/usr/local/texlive/2015/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2013/05/02 v3.3-89 Customizing captions (AR)
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2013/05/02 v1.6-88 caption3 kernel (AR)
+Package caption3 Info: TeX engine: e-TeX on input line 57.
+\captionmargin=\dimen113
+\captionmargin@=\dimen114
+\captionwidth=\dimen115
+\caption@tempdima=\dimen116
+\caption@indent=\dimen117
+\caption@parindent=\dimen118
+\caption@hangindent=\dimen119
+)
+\c@ContinuedFloat=\count92
+Package caption Info: float package is loaded.
+)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/caption/subcaption.sty
+Package: subcaption 2013/02/03 v1.1-62 Sub-captions (AR)
+\c@subfigure=\count93
+\c@subtable=\count94
+)
 (./BEM_Results.aux)
 \openout1 = `BEM_Results.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 7.
-LaTeX Font Info:    ... okay on input line 7.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 7.
-LaTeX Font Info:    ... okay on input line 7.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 7.
-LaTeX Font Info:    ... okay on input line 7.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 7.
-LaTeX Font Info:    ... okay on input line 7.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 7.
-LaTeX Font Info:    ... okay on input line 7.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 7.
-LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -143,16 +165,16 @@ LaTeX Font Info:    ... okay on input line 7.
 
 (/usr/local/texlive/2015/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count92
-\scratchdimen=\dimen113
+\scratchcounter=\count95
+\scratchdimen=\dimen120
 \scratchbox=\box28
-\nofMPsegments=\count93
-\nofMParguments=\count94
+\nofMPsegments=\count96
+\nofMParguments=\count97
 \everyMPshowfont=\toks18
-\MPscratchCnt=\count95
-\MPscratchDim=\dimen114
-\MPnumerator=\count96
-\makeMPintoPDFobject=\count97
+\MPscratchCnt=\count98
+\MPscratchDim=\dimen121
+\MPnumerator=\count99
+\makeMPintoPDFobject=\count100
 \everyMPtoPDFconversion=\toks19
 ) (/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
 Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
@@ -198,36 +220,43 @@ G,.JBIG2,.JB2,.eps]
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: End \AtBeginDocument code.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 10.
+(Font)              <7> on input line 14.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 10.
+(Font)              <5> on input line 14.
 
-Underfull \hbox (badness 10000) in paragraph at lines 9--11
+Underfull \hbox (badness 10000) in paragraph at lines 12--15
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 9--11
+Underfull \hbox (badness 10000) in paragraph at lines 12--15
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 12--15
 
  []
 
 <Lift_Curve.pdf, id=1, 545.87134pt x 427.0936pt>
 File: Lift_Curve.pdf Graphic file (type pdf)
  <use Lift_Curve.pdf>
-Package pdftex.def Info: Lift_Curve.pdf used on input line 16.
+Package pdftex.def Info: Lift_Curve.pdf used on input line 20.
 (pdftex.def)             Requested size: 289.09386pt x 216.81125pt.
 
 <SearsVsBEM.pdf, id=2, 595.54942pt x 371.1422pt>
 File: SearsVsBEM.pdf Graphic file (type pdf)
  <use SearsVsBEM.pdf>
-Package pdftex.def Info: SearsVsBEM.pdf used on input line 22.
+Package pdftex.def Info: SearsVsBEM.pdf used on input line 26.
 (pdftex.def)             Requested size: 289.08649pt x 216.80865pt.
  [1
 
 {/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./Lift_
 Curve.pdf> <./SearsVsBEM.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 29--31
+Underfull \hbox (badness 10000) in paragraph at lines 33--35
 
  []
 
@@ -235,29 +264,125 @@ Underfull \hbox (badness 10000) in paragraph at lines 29--31
 File: fp_total_compare.pdf Graphic file (type pdf)
 
 <use fp_total_compare.pdf>
-Package pdftex.def Info: fp_total_compare.pdf used on input line 36.
-(pdftex.def)             Requested size: 289.08157pt x 216.8059pt.
- [2 <./fp_total_compare.pdf>] (./BEM_Results.aux) ) 
+Package pdftex.def Info: fp_total_compare.pdf used on input line 37.
+(pdftex.def)             Requested size: 260.17342pt x 180.67265pt.
+ [2 <./fp_total_compare.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 42--44
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 42--44
+
+ []
+
+<Pressure_k5.pdf, id=58, 578.68816pt x 448.40543pt>
+File: Pressure_k5.pdf Graphic file (type pdf)
+ <use Pressure_k5.pdf>
+Package pdftex.def Info: Pressure_k5.pdf used on input line 51.
+(pdftex.def)             Requested size: 140.92773pt x 130.08214pt.
+
+<Pressure_k5imag.pdf, id=59, 523.38658pt x 403.19313pt>
+File: Pressure_k5imag.pdf Graphic file (type pdf)
+
+<use Pressure_k5imag.pdf>
+Package pdftex.def Info: Pressure_k5imag.pdf used on input line 56.
+(pdftex.def)             Requested size: 140.92493pt x 130.08261pt.
+
+<Pressure_k5real.pdf, id=60, 543.36815pt x 412.59967pt>
+File: Pressure_k5real.pdf Graphic file (type pdf)
+
+<use Pressure_k5real.pdf>
+Package pdftex.def Info: Pressure_k5real.pdf used on input line 61.
+(pdftex.def)             Requested size: 155.01906pt x 130.0829pt.
+
+<pressure_k10mag.pdf, id=61, 549.01338pt x 407.2586pt>
+File: pressure_k10mag.pdf Graphic file (type pdf)
+
+<use pressure_k10mag.pdf>
+Package pdftex.def Info: pressure_k10mag.pdf used on input line 71.
+(pdftex.def)             Requested size: 140.93062pt x 130.08305pt.
+
+<pressure_k10imag.pdf, id=62, 518.29921pt x 408.32852pt>
+File: pressure_k10imag.pdf Graphic file (type pdf)
+
+<use pressure_k10imag.pdf>
+Package pdftex.def Info: pressure_k10imag.pdf used on input line 76.
+(pdftex.def)             Requested size: 140.92332pt x 130.08835pt.
+
+<pressure_k10real.pdf, id=63, 536.00961pt x 404.71391pt>
+File: pressure_k10real.pdf Graphic file (type pdf)
+
+<use pressure_k10real.pdf>
+Package pdftex.def Info: pressure_k10real.pdf used on input line 81.
+(pdftex.def)             Requested size: 155.02168pt x 130.0854pt.
+ [3 <./Pressure_k5.pdf> <./Pressure_k5imag.pdf> <./Pressure_k5real.pdf> <./pres
+sure_k10mag.pdf> <./pressure_k10imag.pdf> <./pressure_k10real.pdf>] <pressure_k
+15mag.pdf, id=146, 551.83165pt x 411.42027pt>
+File: pressure_k15mag.pdf Graphic file (type pdf)
+
+<use pressure_k15mag.pdf>
+Package pdftex.def Info: pressure_k15mag.pdf used on input line 92.
+(pdftex.def)             Requested size: 140.92151pt x 130.08774pt.
+
+<pressure_k15imag.pdf, id=147, 529.2419pt x 409.54507pt>
+File: pressure_k15imag.pdf Graphic file (type pdf)
+
+<use pressure_k15imag.pdf>
+Package pdftex.def Info: pressure_k15imag.pdf used on input line 97.
+(pdftex.def)             Requested size: 140.92677pt x 130.08223pt.
+
+<pressure_k15real.pdf, id=148, 534.36203pt x 404.71391pt>
+File: pressure_k15real.pdf Graphic file (type pdf)
+
+<use pressure_k15real.pdf>
+Package pdftex.def Info: pressure_k15real.pdf used on input line 102.
+(pdftex.def)             Requested size: 155.01808pt x 130.0854pt.
+
+<pressure_k20mag.pdf, id=149, 548.91922pt x 417.19034pt>
+File: pressure_k20mag.pdf Graphic file (type pdf)
+
+<use pressure_k20mag.pdf>
+Package pdftex.def Info: pressure_k20mag.pdf used on input line 112.
+(pdftex.def)             Requested size: 140.9232pt x 130.07883pt.
+
+<pressure_k20imag.pdf, id=150, 533.65744pt x 413.5931pt>
+File: pressure_k20imag.pdf Graphic file (type pdf)
+
+<use pressure_k20imag.pdf>
+Package pdftex.def Info: pressure_k20imag.pdf used on input line 117.
+(pdftex.def)             Requested size: 140.92996pt x 130.08687pt.
+
+<pressure_k20real.pdf, id=151, 533.81721pt x 415.0963pt>
+File: pressure_k20real.pdf Graphic file (type pdf)
+
+<use pressure_k20real.pdf>
+Package pdftex.def Info: pressure_k20real.pdf used on input line 122.
+(pdftex.def)             Requested size: 155.0148pt x 130.0783pt.
+ [4 <./pressure_k15mag.pdf> <./pressure_k15imag.pdf> <./pressure_k15real.pdf> <
+./pressure_k20mag.pdf> <./pressure_k20imag.pdf> <./pressure_k20real.pdf>] (./BE
+M_Results.aux) ) 
 Here is how much of TeX's memory you used:
- 2015 strings out of 493089
- 29313 string characters out of 6134842
- 94519 words of memory out of 5000000
- 5500 multiletter control sequences out of 15000+600000
- 3948 words of font info for 15 fonts, out of 8000000 for 9000
+ 3180 strings out of 493089
+ 50660 string characters out of 6134842
+ 115893 words of memory out of 5000000
+ 6632 multiletter control sequences out of 15000+600000
+ 4247 words of font info for 16 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 37i,5n,32p,666b,227s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/local/texlive/2015/tex
-mf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2015/texm
-f-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2015/texmf
--dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2015/texmf-
-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2015/texmf-di
-st/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2015/texmf-dist
-/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2015/texmf-dist/
-fonts/type1/public/amsfonts/cm/cmsy7.pfb>
-Output written on BEM_Results.pdf (2 pages, 149149 bytes).
+ 38i,7n,38p,666b,447s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts
+/cm/cmbx10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/
+cm/cmex10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/c
+m/cmmi10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm
+/cmmi7.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/c
+mr10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr
+9.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10
+.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.p
+fb>
+Output written on BEM_Results.pdf (4 pages, 523895 bytes).
 PDF statistics:
- 81 PDF objects out of 1000 (max. 8388607)
- 57 compressed objects within 1 object stream
+ 260 PDF objects out of 1000 (max. 8388607)
+ 184 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
- 16 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 76 words of extra memory for PDF output out of 10000 (max. 10000000)
 

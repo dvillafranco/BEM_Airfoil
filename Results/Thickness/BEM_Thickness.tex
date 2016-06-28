@@ -3,10 +3,13 @@
 \usepackage{graphicx}
 \graphicspath{.}
 \usepackage{float}
+\usepackage{caption}
+\usepackage{subcaption}
 
 \begin{document}
 
 \noindent \textbf{Thickness} \\ \\
+\noindent \textbf{Unsteady Lift} \\ \\
 Vortex of strength $\Gamma$ = -0.02 started upstream at (-4.5,0.04). Given that the airfoil in consideration is now a NACA 0012 and not a flat plate, it is expected that the frequency spectrum obtained will not match with Sears. As detailed in Lysack (2011), a thickness correction can be written for a given airfoil profile. For the thickness of the NACA 0012, the expression was adjusted accordingly and compared to the results obtained from the BEM simulation. The resulting expressing is detailed below. 
 
 \begin{equation}
@@ -42,6 +45,72 @@ As was done with the flat plate, the BEM results were now compared to other simu
 \centering
 \caption{Lift Spectrum compared to other simulations}
 \end{figure}
+
+\newpage
+\noindent \textbf{Unsteady Pressure}\\ \\
+\noindent As was done with the flat plate, the unsteady pressure which results from the BEM calculation will be compared to the predicted unsteady pressure of the other simulations. \\ 
+
+\begin{figure}[h]
+\centering
+\begin{subfigure}{0.3\textwidth}
+	\centering
+	\includegraphics[width = \textwidth, height=0.16\textheight]{NACA0003_pressure_k5mag}
+	\captionof{figure}{Magnitude}
+\end{subfigure}%
+\begin{subfigure}{0.3\textwidth}
+	\centering
+	\includegraphics[width = \textwidth, height=0.16\textheight]{NACA0003_pressure_k5imag}
+	\captionof{figure}{Imaginary}
+\end{subfigure}%
+\begin{subfigure}{0.33\textwidth}
+	\centering
+	\includegraphics[width = \textwidth, height=0.16\textheight]{NACA0003_pressure_k5real}
+	\captionof{figure}{Real}
+\end{subfigure}%
+\caption{Pressure Distribution of NACA 0003 airfoil for a reduced frequency of k=5}
+\end{figure}
+
+\begin{figure}[h]
+\centering
+\begin{subfigure}{0.3\textwidth}
+	\centering
+	\includegraphics[width = \textwidth, height=0.16\textheight]{NACA0003_pressure_k10mag}
+	\captionof{figure}{Magnitude}
+\end{subfigure}%
+\begin{subfigure}{0.3\textwidth}
+	\centering
+	\includegraphics[width = \textwidth, height=0.16\textheight]{NACA0003_pressure_k10imag}
+	\captionof{figure}{Imaginary}
+\end{subfigure}%
+\begin{subfigure}{0.33\textwidth}
+	\centering
+	\includegraphics[width = \textwidth, height=0.16\textheight]{NACA0003_pressure_k10real}
+	\captionof{figure}{Real}
+\end{subfigure}%
+\caption{Pressure Distribution of NACA 0003 airfoil for a reduced frequency of k=10}
+\end{figure}
+
+\begin{figure}[h]
+\centering
+\begin{subfigure}{0.3\textwidth}
+	\centering
+	\includegraphics[width = \textwidth, height=0.16\textheight]{NACA0003_pressure_k15mag}
+	\captionof{figure}{Magnitude}
+\end{subfigure}%
+\begin{subfigure}{0.3\textwidth}
+	\centering
+	\includegraphics[width = \textwidth, height=0.16\textheight]{NACA0003_pressure_k15_imag}
+	\captionof{figure}{Imaginary}
+\end{subfigure}%
+\begin{subfigure}{0.33\textwidth}
+	\centering
+	\includegraphics[width = \textwidth, height=0.16\textheight]{NACA0003_pressure_k15real}
+	\captionof{figure}{Real}
+\end{subfigure}%
+\caption{Pressure Distribution of NACA 0003 airfoil for a reduced frequency of k=15}
+\end{figure}
+
+
 
 \end{document}
 
