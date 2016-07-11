@@ -1,0 +1,7 @@
+#!/bin/tcsh 
+
+
+unlimit
+time   BEM2d2_rel 1example 
+
+

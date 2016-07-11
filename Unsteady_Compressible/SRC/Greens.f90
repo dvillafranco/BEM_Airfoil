@@ -199,6 +199,10 @@ subroutine CalcGreens(Xs,Xo, G, BC)
       end do
    end do
 
+	write(*,*) 'in CalcTGreens at end', &
+	G%s   ,G%d   ,G%r   , G%th,  &
+            G%vs,G%vd,G%vr, G%thp, &
+            G%rF  ,G%thpF,G%vrF
 end subroutine CalcGreens
 
 

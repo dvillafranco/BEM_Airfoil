@@ -1,6 +1,6 @@
 V27 0x4 bem2d_typ
 13 BEM2d_typ.f90 S582 0
-06/20/2016  14:22:59
+07/08/2016  12:30:06
 use typekinds public 0 direct
 enduse
 D 56 24 599 424 595 7

@@ -334,6 +334,7 @@ subroutine SolveM(W, recalc)
    integer       :: i,j,k,M,N,N1,N2, Nel
    real(kind=dp) :: tmp, dt
 
+	write(*,*) 'getting to here for mach', Mach
    N = size(W%Xc,1)  ! no coll pts
    M = N + Npieces   ! no equations
 
@@ -357,6 +358,7 @@ subroutine SolveM(W, recalc)
          rhs   = 0.0_dp
       end if
 
+	write(*,*) 'getting to here for before nullgreens' 
       N1 = 1
       do j = 1, Npieces
          Nel = size(W%B(j,1)%X,1) - 1
@@ -375,6 +377,7 @@ subroutine SolveM(W, recalc)
             W%B(j,k)%phin = BC(:,k)
          end do
          deallocate(BC)
+	write(*,*) 'getting to here for after BC deallo'
 
          N2 = W%idx(j)
 
@@ -388,6 +391,7 @@ subroutine SolveM(W, recalc)
          ith = int(alf)
          alf = alf - real(ith,kind=dp)
 
+	write(*,*) 'getting to here after allo alf'
          do i = 1, Nel
             Gb(j)%d(i,i)  = -pi
          end do
@@ -415,6 +419,7 @@ subroutine SolveM(W, recalc)
 
          deallocate(alf, ith)
 
+	write(*,*) 'getting to here for after deallo alf'
          N1 = N2 + 1
       end do
 
@@ -423,6 +428,7 @@ subroutine SolveM(W, recalc)
    rhs   = 0.0_dp
    lufac = array
 
+	write(*,*) 'getting to here before calcgreens'
    N1 = 1
    do i = 1, Npieces
       N2 = W%idx(i)
@@ -434,16 +440,20 @@ subroutine SolveM(W, recalc)
       ! Katz formulation
       ! rhs(1:N) =  matmul(Gb%s,BC(:,Timeiter))
 
+	write(*,*) 'after calcgreens'
       Nel = size(W%B(i,1)%X,1) - 1
       allocate(src(N,Nel), dbl(N,Nel))
 
       allocate(alf(N,Nel), ith(N,Nel))
+
+	write(*,*) 'after allocates src etc'
       alf = Gb(i)%thp/dt
       ith = int(alf)
       alf = alf - real(ith,kind=dp)
       call sourceVector(W%B,i,ith,alf, src,dbl, .false.)
       rhs(1:N)  = rhs(1:N) - sum(Gb(i)%r*dbl, dim=2)
 
+	write(*,*) 'after sourcevector1'
       alf = Gb(i)%th/dt
       ith = int(alf)
       alf = alf - real(ith,kind=dp)
@@ -461,35 +471,45 @@ subroutine SolveM(W, recalc)
       end if
 
       deallocate(alf,ith, src,dbl)
+	write(*,*) 'after deallocate src etc'
 
       !Nel = size(W%W(i,1)%X,1) - 1
       Nel = Timeiter
       if(Nel > 1) then
+	write(*,*) 'in if allocate'
          allocate(alf(N,Nel), ith(N,Nel), dbl(N,Nel))
+	write(*,*) 'allocate workds'
+	write(*,*) dt, Gw(i)%thp 
          alf = Gw(i)%thp/dt
          ith = int(alf)
          alf = alf - real(ith,kind=dp)
+	write(*,*) 'before wakesource', i, ith, alf, dbl
          call wakeSource(W%W,i,ith,alf, dbl)
+	write(*,*) 'after wkae course'
          rhs(1:N)  = rhs(1:N) - sum(Gw(i)%r(:,2:Nel)*dbl(:,2:Nel), dim=2)
 
          alf = Gw(i)%th/dt
          ith = int(alf)
          alf = alf - real(ith,kind=dp)
          call wakeSource(W%W,i,ith,alf, dbl)
+	write(*,*) 'after 2nd wakesource'
          rhs(1:N)  = rhs(1:N) + sum( &
             (Gw(i)%d(:,2:Nel)+Gw(i)%r(:,2:Nel))*dbl(:,2:Nel), dim=2)
 
          if(Figueiredo)then
+	write(*,*) 'in fig if'
             rhs(1:N) = rhs(1:N) + sum(Gb(i)%rF(:,2:Nel)*dbl(:,2:Nel),dim=2)
 
             alf = Gb(i)%thpF/dt
             ith = int(alf)
             alf = alf - real(ith,kind=dp)
             call wakeSource(W%W,i,ith,alf, dbl)
+	write(*,*) 'after wake source call in figuer'
             rhs(1:N) = rhs(1:N) - sum(Gb(i)%rF(:,2:Nel)*dbl(:,2:Nel), dim=2)
          end if
 
          deallocate(alf,ith, dbl)
+	write(*,*) 'wake source part deallo alf'
       end if
 
       rhs(N+1:) = 0.0_dp
@@ -497,6 +517,7 @@ subroutine SolveM(W, recalc)
       ! assemble implicit matrix, A = (2pi)H(f)I - Gdb - Gdw*(s+ - s-)
       lufac(1:N,N+i) = -Gw(i)%d(:,1)
 
+	write(*,*) 'getting to here before select case'
       select case (TEcond)
          case(1)           ! dphiTE(t) = phi+(t-x+/U) - phi-(t-x+/U)
             d1 = abs( 0.5_dp*(W%W(i,Timeiter)%X(1,1)+W%W(i,Timeiter)%X(2,1)) &
