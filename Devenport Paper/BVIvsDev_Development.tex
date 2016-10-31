@@ -1,0 +1,147 @@
+% Dorien Villafranco
+% 09/26/2016
+% Development of Relationship between Devenport Gust Solution and BVI problem 
+
+\documentclass{article}
+\usepackage[letterpaper, margin = 1 in]{geometry}
+\usepackage{graphicx}
+\graphicspath{.}
+\usepackage{float}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{amsmath}
+\usepackage{amssymb}
+
+\begin{document}
+\noindent Consider the \textbf{Possio} Solution: \\
+\begin{itemize}
+\item What is solved is unit gust response of 2D airfoil (flat plate) to gust with $k_1$ and $k_3$ variation. $k_3$ can be assumed to be zero and the Mach number can be small.
+\item Results compare well to Sears
+\item The result is actually $\Delta p_{nd} sin(\theta)$ (this is what is sent back to code from the subroutine).
+\item We can compute lift per span then: \\
+\begin{align*}
+L'(w \sim k_1,k_3 = 0) = \int_0^\pi \Delta p_{nd} (\theta) sin(\theta) d\theta \Big[ \rho U_{\infty} u_g(k_1,k_3)\Big]
+\end{align*}
+which is the same as
+\begin{align*}
+\qquad = \int_0^c \Delta p_{nd}(x) e^{-ik_3x_3} \Big[ \rho U_\infty u_g(k_1,k_3)\Big]
+\end{align*}
+\item This should compare with Sears' result
+\begin{align*}
+L' = \pi \rho c U_\infty \hat{u_g} S(k_1)
+\end{align*}
+\item Now, at a single frequency this is understood to be the answer and $L' = \pi\rho cU_\infty \hat{u_g} S(k_1) e^{i\omega t}$. Take the real or imaginary part to have behavior in time. (N.B.:  $\omega = 2\pi f$ and $k_1 = \frac{\omega c}{2 U}$)
+\item A more general representation would be:
+\begin{align*}
+L'(t) = \int_{-\infty}^\infty \pi \rho c U_\infty \hat u_g(k_1)S(k_1) e^{i\omega t} \delta(\omega - \omega_o) d\omega
+\end{align*}
+where $k_1$ in the above equation is $k_1 = \frac{wc}{2U}$
+The Fourier component (L'(w)) is given as: 
+\begin{align*}
+L'(\omega) = \pi \rho c U_\infty \hat u_g(k_1)S(k_1)\delta(\omega - \omega_o)
+\end{align*}
+\item Moving to a more general airfoil and airfoil response where all the wave numbers can interact with the airfoil (but we still assume the upwash direction of the velocity dominates the interaction) we need to understand the gust and the final lift in the frequency domain.
+\begin{align*}
+\hat{\hat{\hat{\hat {u}}}}_g = \int \int \int \int u_g (\bar x, t)e^{i\omega t - i \bar k \cdot \bar x} d\bar x dt
+\end{align*}
+We know however that we really have the behavior $x_1 - U_\infty t$ not separate $x_1$ and t. Therefore: 
+\begin{align*}
+ \qquad =\int \int \int \int u_g(x_1 - U_\infty t, x_2, x_3) e^{i\omega t - i\bar{k}\cdot \bar{x}} d\bar{x}dt
+\end{align*}
+let $x_c = x_1 - U_\infty t$ and d$x_1$ = d$x_c$.
+
+\begin{align*}
+\qquad = \int \int \int \int u_g(x_c, x_2, x_3) e^{i\omega t - ik_1(x_c+U_\infty t) -ik_2x_2 - ik_3x_3} dx_c dx_2 dx_3 dt
+\end{align*}
+Now integrate with t
+\begin{align*}
+\hat{\hat{\hat{\hat u}}}_g(\bar{k},\omega) = \int \int \int u_g(x_c,x_2,x_3)2\pi\delta(\omega - k_1U_\infty)e^{-ik_1x_1 - ik_2x_2 -ik_3x_3}dx_cdx_2dx_3
+\end{align*}
+In which the connection between $\omega$ and $k_1$ is imposed. 
+\newpage
+
+\item Now we need to understand the turbulence influence on an airfoil. The spectrum of turbulence ($\Omega_{ij}$) is given by definition:
+\begin{align*}
+\Omega_{\bar{k}} = \int \int \int \Big<u_g(\bar{x}-\bar{U}t) u_g^*(\bar{x}-\bar{U}t-\bar{\xi})\Big> e^{i\bar{k}\cdot\bar{\xi}}d\bar{\xi}
+\end{align*}
+Transform of the correlation. \\
+If we are going to use this we have to understand how it relates to $\big<\hat{\hat{\hat{\hat{u}}}}_g \hat{\hat{\hat{\hat{u}}}}_g^*\big>$ which will be required input to gust response. 
+\begin{align*}
+\Big<\hat{\hat{\hat{\hat{u}}}}_g(\bar{k}, \omega)\hat{\hat{\hat{\hat{u}}}}_g^*(\bar{K},v)\Big> = \int \int \int \int \int \int \int \int \Big<u_g(\bar{x},t) u_g^*(\bar{y},\tau)\Big> e^{i\omega t - iv\tau - i\bar{k}\cdot\bar{x} + i\bar{K}\cdot\bar{y}}d\bar{x}d\bar{y}dtd\tau
+\end{align*}
+using: $\bar{x} - \bar{U}_\infty t$ and$ \bar{y} -\bar{U}_\infty t $ and define $\bar{\xi} = \bar{x} - \bar{y} - \bar{U}_\infty(t - \tau)$
+\item Substitute and perform integration with t and $\tau$
+\begin{align*}
+\Big<\hat{\hat{\hat{\hat u}}}_g \hat{\hat{\hat{\hat u}}}_g^*\Big> = (2\pi)^2 \int \int \int \int \int \int \Big<u_g(\bar{x} - \bar{U}t)u_g^*(\bar{x} - \bar{U}t - \bar{\xi})\Big> \delta(\omega - \bar{k}\cdot\bar{U})\delta(-v+\bar{k}\cdot\bar{U})e^{-i\bar{k}\cdot\bar{x}-i\bar{K}\cdot\bar{\xi}+i\bar{K}\cdot\bar{x}}d\bar{x}d\bar{\xi}
+\end{align*}
+Now we will insert the definition of the turbulence spectrum as stated above. 
+\begin{align*}
+\qquad = (2\pi)^2 \int \int \int \Omega_{ij}(\bar{k}) \delta(\omega - \bar{k}\cdot\bar{U})\delta(-v+\bar{k}\cdot\bar{U})e^{-i\bar{k}\cdot\bar{x} + i\bar{k}\cdot\bar{x}}d\bar{x}
+\end{align*}
+\begin{align*}
+\qquad = (2\pi)^5 \Omega_{ij}(\bar{k}) \delta(\omega - \bar{k}\cdot\bar{U})\delta(-v+\bar{k}\cdot\bar{U})\delta(\bar{k}-\bar{K})
+\end{align*}
+\item We now want to use this in 3D and having strip wise information we understand $\Delta p(x_1, x_2, x_3)$
+\begin{align*}
+\Delta p(x_1,x_2,x_3, \omega) = \frac{1}{(2\pi)^3} \int \int \int \rho(x_3) U(x_3) u_g(x_3,\bar{k},\omega)\hat{\Delta p}(\bar{k},x_1,x_2,x_3)e^{ik_3x_3}d\bar{k}
+\end{align*}
+
+\begin{align*}
+\Big<\Delta p(\bar{x},\omega)\Delta p^*(y_1,y_2,x_3+\Delta x_3)\Big>\Big<\hat{\hat{\hat{\hat{u}}}}_g(x_3,\hat{k},\omega)\hat{\hat{\hat{\hat{u}}}}_g^*\Big> e^{ik_3x_3-ik_3(x+\Delta x_3)}d\bar{k}d\bar{k}
+\end{align*}
+\begin{align*}
+\Big<\hat{L'(\omega)}\hat{L'(\omega)}^*\Big> = \int_{x_3} \int_{\Delta x_3} \int_{x_1} \int_{y_1} \Big<\Delta p(\bar{x},\omega)\Delta p^*(\bar{y}+\Delta y_3,v)\Big> dy_1 dx_1 dx_3 d\Delta x_3
+\end{align*}
+\item Inserting now the definitions for $\Delta p$ and the gust. 
+\begin{align*}
+\Big<\hat{L'(\omega)}\hat{L'(\omega)}^*\Big> =  \int_{x_3} \int_{\Delta x_3} \int_{x_1} \int_{y_1} \frac{1}{(2\pi)^6}\rho^2 U^2 \int \int \int \int \int \int (\hat{\Delta p}(\bar{k},\bar{x})\hat{\Delta p^*}(\bar{k},y_1,y_2,y_3 + \Delta y_3))\\(2\pi)^5 \Omega_{ij}(\bar{K})\delta(\omega - \bar{k}\cdot \bar{U})\delta(-v+\bar{K}\cdot\bar{U})\delta(\bar{k}-\bar{K})e^{ik_3x_3 - ik_3(x_3 + \Delta x_3)} d\bar{k} d\bar{K} dy_1 dx_1 d\Delta x_3
+\end{align*}
+\item Integrate over $\bar{K}$ and all $\bar{K}$ become $\bar{k}$ and remove delta function of k and K since values only relevant for k = K.
+\begin{align*}
+\Big<\hat{L'(\omega)}\hat{L'(\omega)}^*\Big> =  \int_{x_3} \int_{\Delta x_3} \int_{x_1} \int_{y_1} \frac{1}{(2\pi)^6}\rho^2 U^2 \int \int \int (\hat{\Delta p}(\bar{k},\bar{x})\hat{\Delta p^*}(\bar{k},y_1,y_2,x_3 + \Delta x_3))\\(2\pi)^5 \Omega_{ij}(\bar{k})\delta(\omega - \bar{k}\cdot \bar{U})\delta(-v+\bar{k}\cdot\bar{U})e^{ik_3x_3 - ik_3(x_3 + \Delta x_3)} d\bar{k} dy_1 dx_1 d\Delta x_3
+\end{align*}
+
+\item Now we will make the substitution and let $k_{new} = k_1 U$ and assuming $U_\infty$ exists only in the $k_1$ direction.
+
+\begin{align*}
+\Big<\hat{L'(\omega)}\hat{L'(\omega)}^*\Big> =  \int_{x_3} \int_{\Delta x_3} \int_{x_1} \int_{y_1} \frac{1}{(2\pi)^6}\rho^2 U^2 \int \int \int (\hat{\Delta p}(\bar{k},\bar{x})\hat{\Delta p^*}(\bar{k},y_1,y_2,x_3 + \Delta x_3))\\(2\pi)^5 \Omega_{ij}(\bar{k})\delta(\omega - k_{new})\delta(-v+k_{new})e^{-ik_3 \Delta y_3} d\bar{k} dy_1 dx_1 d\Delta x_3
+\end{align*}
+
+\item Perform integration with $x_3$ and $\Delta x_3$
+\begin{align*}
+\Big<\hat{L'(\omega)}\hat{L'(\omega)}^*\Big> = \int_{x_1} \int_{y_1} \frac{1}{(2\pi)^6}\rho^2 U^2 \int \int \int (\hat{\Delta p}(\bar{k},\bar{x})\hat{\Delta p^*}(\bar{k},y_1,y_2,x_3 + \Delta x_3))\\(2\pi)^5 \Omega_{ij}(\bar{k})\delta(\omega - k_{new})\delta(-v+k_{new})L_r sinc\Big(\frac{k_3L_r}{2}\Big) R_3  d\bar{k} dy_1 dx_1
+\end{align*}
+\item Using the identity:
+\begin{align*}
+\int \delta(a-x)dx \delta(x-b) = \delta(a-b)
+\end{align*}
+The equation becomes:
+\begin{align*}
+\int_{x_1} \int_{y_1} \int_{k_2} \int_{k_3} \frac{1}{(2\pi)^6}\rho^2 u^2 ( (\hat{\Delta p}(\bar{k},\bar{x})\hat{\Delta p^*}(\bar{k},y_1,y_2,x_3+\Delta x_3))(2\pi)^5 (\Omega_{ij}\bar{k})L_r sinc\Big(\frac{k_3L_r}{2}\Big) R_3 \frac{dx_1}{U_1}dy_1dk_2dk_3
+\end{align*}
+Since $L_r$ is related to the $\Delta x_3$ integration, we will define it as a length $R_3$, and inserting the definition for the turbulence spectrum, $\Omega_{ij}$,
+\begin{align*}
+\int_{x_1} \int_{y_1} \int_{k_2} \int_{k_3} \frac{1}{(2\pi)}\rho^2 U ( (\hat{\Delta p}(\bar{k},\bar{x})\hat{\Delta p^*}(\bar{k},y_1,y_2,x_3+\Delta x_3)) \frac{2\bar{u}^2}{\pi}\frac{L(L\sqrt{k_1^2+k_2^2+k_3^2})^4}{(1+L^2(k_1^2+k_2^2+k_3^2))^3}R_3^2 sinc\Big(\frac{k_3R_r}{2}\Big) dx_1 dy_1dk_2dk_3
+\end{align*}
+By letting $k_3$ go to zero, removing the dependence on $k_3$,  the equation becomes: 
+\begin{align*}
+\int_{x_1} \int_{y_1} \int_{k_2}  \frac{1}{(2\pi)}\rho^2 U ( (\hat{\Delta p}(\bar{k},\bar{x})\hat{\Delta p^*}(\bar{k},y_1,y_2,x_3+\Delta x_3)) \frac{2\bar{u}^2}{\pi}\frac{L(L\sqrt{k_1^2+k_2^2})^4}{(1+L^2(k_1^2+k_2^2))^3}R_3^2 dx_1 dy_1dk_2
+\end{align*}
+Let the response function T be defined as:
+\begin{align*}
+T = \int_{y_1} \int_{x_1}( (\hat{\Delta p}(\bar{k},\bar{x})\hat{\Delta p^*}(\bar{k},y_1,y_2,x_3+\Delta x_3))  dx_1 dy_1
+\end{align*}
+The lift response is thus:
+\begin{align*}
+\Big<L'(\hat{\omega})L'(\hat{\omega})^*\Big>= \int_{k_2} \frac{R_3}{2\pi} \rho^2 U \Big(T(k_1,k_2)\Big) \frac{2\bar{u}^2}{\pi}\frac{L(L\sqrt{k_1^2+k_2^2})^4}{(1+L^2(k_1^2+k_2^2))^3} dk_2
+\end{align*}
+\end{itemize}
+\newpage
+List to do:
+\begin{itemize}
+\item Substitute everything in last equation and also add $y_2$ contribution. 
+\item Integrate over $\bar{K}$ and all $\bar{K}$ become $\bar{k}$
+\item Change variables $k_new = k_1 U$ so that integration can be performed with $k_new$ and the delta functions can be utilized. 
+\item Integrate with respect to $\Delta x_3$ would give a sinc function. 
+\end{itemize}
+\end{document}
